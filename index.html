@@ -14,6 +14,19 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
     <style type="text/css">
+      /*Large desktop*/
+
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
       body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -22,7 +35,9 @@
         width: 960px;
       }
       p.lead {
-        padding-top: 15px;
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
       .navigation, .pitch, .section1, .section2, .faq, .footer {
         padding: 10px 0px 10px 0px;
@@ -73,10 +88,33 @@
           <p class="lead">Welcome to the world of <em>Bitstarter</em></p>
         </div>
       </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" src="http://placehold.it/480x300"> //Video
         </div>
+        <div class="span5 actions">
+          <div class="span8 offset2">
+            <div class="statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="linediv-l">
+                <h3>1000</h3> <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$6000</h3> <p>of $10,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3>10</h3> <p>days left</p>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="span6">
           <div class="thermometer">
             Thermometer
